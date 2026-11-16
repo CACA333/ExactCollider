@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.DS_Store
+ExactCollider.app/
+exact-collider
+ExactColliderApp.swift
+build_app.sh
+collider_core.py
+exact_collider.py

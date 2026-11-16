@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "exact-collider"
+version = "1.0.0"
+description = "Cross-platform (Windows/Linux/macOS) zero-gap & ultra-tight 3D collision generator CLI with terminal drag-and-drop support"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "trimesh>=4.0",
+    "coacd>=1.0",
+    "manifold3d>=2.0",
+    "rich>=13.0",
+]
+
+[project.scripts]
+exact-collider = "exact_collider.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["exact_collider*"]
